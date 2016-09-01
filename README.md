@@ -40,8 +40,10 @@ G = digraph(adj);
 figure;
 for ii = 1:length(pth)
     subplot(3,3,ii);
-    h(ii) = plot(G);
-    highlight(h(ii), pth{ii}, 'edgecolor', 'r'); 
+    h(ii) = plot(G, 'edgecolor', 'k', 'nodecolor', 'k');
+    highlight(h(ii), pth{ii}, 'edgecolor', 'b', 'nodecolor', 'b'); 
+    highlight(h(ii), 7, 'nodecolor', 'g');
+    highlight(h(ii), 8, 'nodecolor', 'r');
 end
 ```
 
